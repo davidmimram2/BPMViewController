@@ -12,14 +12,9 @@
 
 @property double bpm;
 @property IBOutlet UILabel *beatLabel;
+@property IBOutlet UILabel *bpmLabel;
+@property IBOutlet UILabel *tapToCloseLabel;
 
-- (id)initWithBpm:(double)beatsPerMinute beatsPerMeasure:(int)bpMeasure;
+- (BPMViewController *)initWithBpm:(double)beatsPerMinute meter:(int)bpMeasure;
 
 @end
-
-/**
- 
- BPMViewController *_testVC = [[BPMViewController alloc] initWithBpm:120.0 beatsPerMeasure:4];
- [self presentViewController:_testVC animated:YES completion:nil];B
- 
- **/
